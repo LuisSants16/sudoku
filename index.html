@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="menu" class="menu">
+      <div class="menu-box">
+        <h1>🧩 Bienvenido a Sudoku</h1>
+        <p>Selecciona el nivel para comenzar</p>
+
+        <div class="menu-levels">
+          <button data-level="easy">Fácil</button>
+          <button data-level="normal">Normal</button>
+          <button data-level="medium">Medio</button>
+          <button data-level="hard">Difícil</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="wrap">
+      <h1>Sudoku</h1>
+
+      <div class="timer">⏱ <span id="time">00:00</span></div>
+
+      <div class="levels">
+        <button data-level="easy">Fácil</button>
+        <button data-level="normal">Normal</button>
+        <button data-level="medium">Medio</button>
+        <button data-level="hard">Difícil</button>
+      </div>
+
+      <div id="grid" class="grid" aria-label="Tablero de sudoku"></div>
+
+      <div class="controls">
+        <button id="home" class="ghost">Inicio</button>
+        <button id="solve" class="ghost">Resolver</button>
+
+        <button id="pause" class="pause">⏸</button>
+
+        <button id="check">Comprobar</button>
+        <button id="reset" class="ghost">Reiniciar</button>
+      </div>
+
+      <p id="msg" class="msg"></p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
